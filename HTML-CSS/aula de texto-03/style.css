@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/*
+os id em html são # em css
+os class em html são . em css
+id>class
+*/
+
+body{
+    background-color: powderblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: rgb(4, 109, 0);
+    text-transform: capitalize;
+}
+
+#principal{
+    text-align: center;
+    text-transform: uppercase;
+    background-color: green;
+    color: greenyellow;
+}
+
+.secundarios{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+h2{
+    color: rgb(51, 77, 49);
+}

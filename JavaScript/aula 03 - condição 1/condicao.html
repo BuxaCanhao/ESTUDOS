@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>condicionais</title>
+</head>
+<body>
+    <h1>Condicionais</h1>
+    <div>
+        <input type="text" id="origem" style="text-transform: lowercase;">
+        <button onclick="verificar()">verificar</button>
+        <p id="ver">verificar...</p>
+    </div>
+    <script>
+        function verificar(){
+            var origtxt = document.querySelector('#origem')
+            var verftxt = document.querySelector('#ver')
+
+            if(origtxt.value == 'brasil' || origtxt.value == 'Brasil'){
+                verftxt.innerHTML = `Você é <strong>brasileiro</strong>`
+            }else{
+                verftxt.innerHTML = `Você é <strong>estrangeiro</strong>`
+            }
+        }
+    </script>
+</body>
+</html>

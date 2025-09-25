@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula java 02</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="text-transform: capitalize;">Calculadora simples</h1>
+    <input type="number" id="n1" class="n1">
+    <input type="number" id="n2" class="n2">
+    <button onclick="somar()">resultado</button>
+    <div id="res">resultado</div>
+    <script>
+        function somar(){
+            var tn1 = document.querySelector('#n1')
+            var tn2 = document.querySelector('#n2')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var soma = n1 + n2
+
+            if(soma>=0){
+            document.querySelector('#res').innerHTML = `O resultado da soma de ${n1} mais ${n2} é igual a ${soma}`
+            }
+            else{
+                document.querySelector('#res').innerHTML = 'erro'
+            }
+        }
+    </script>
+</body>
+</html>

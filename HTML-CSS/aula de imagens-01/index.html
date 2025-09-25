@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br";>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--para adicionar icone de favorito o link deve estar na area de <head></head>-->
+    <!--os icones devem estar no formato .ico de preferencia com o nome de "favicon.ico"-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        div{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+        }
+    </style>
+    <title>aula de imagem &#x1F5BC;</title>
+</head>
+<body>
+    <H1>AULA DE IMAGEM</H1>
+    <hr><br>
+    <div class="mesmaPasta">
+        <P>Esta imagem está na mesma pasta do HTML</P>
+        <!--para adicionaruma imagem que se encontra na mesma pasta basta chamar <img> e indicar o nome da imagem no campo 'src="nome do arquivo"'-->
+        <!--o campo 'alt="texto"' é usado para exibir um texto caso a imagem não apareça-->
+        <img src="Star_vs_the_Evil.png" width="150" alt="img na mesma pasta">
+    </div>
+    <div class="pastaDiferente">
+        <P>Esta imagem esté em uma pasta diferente do HTML</P>
+        <!--para adicionar uma imagem em outra pasta basta fazer o mesmo processo de cima, mas com o caminho da pasta da imagem-->
+        <img src="imagens/Star_vs_the_Evil-BackGround.png" width="150" alt="img em outra pasta">
+    </div>
+    <div class="linkExterno">
+        <P>Esta imagem está em um servidor externo</P>
+        <!--para adicionar uma imagem em outra pasta basta fazer o mesmo processo de cima, mas com o link da imagem-->
+        <img src="https://m.media-amazon.com/images/M/MV5BN2Q4ZjdkNjAtYzdjZC00ZmU3LWFlNmEtNmZmZGM0MzVkZjJjXkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" width="150" alt="img puxado de link externo">
+    </div>
+    <br>
+    <p>Para a próxima aula <a href="http://127.0.0.1:5500/aula%20de%20imagens-02/index.html">clique aqui</a></p>
+    <br><br><a href="http://127.0.0.1:5500/index.html">home</a>
+</body>
+</html>

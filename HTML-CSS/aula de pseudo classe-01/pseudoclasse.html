@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudoclasse</title>
+    <style>
+        body {
+            font: normal 1em arial, helvetica, sans-serif;
+            background-color: lightcyan;
+        }
+
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            font: normal 2.5em serif;
+            color: darkcyan;
+            background-color: aquamarine;
+        }
+
+        div {
+            display: inline-block;
+            background-color: grey;
+            border: 1px solid darkslategrey;
+            height: 120px;
+            width: 120px;
+            text-align: center;
+            margin: 5px;
+        }
+
+        #d01>p {
+            display: none;
+            text-align: center;
+            margin: 0px;
+            margin-block: 0px;
+        }
+
+        #d01:hover>p {
+            display: block;
+        }
+
+        div:hover {
+            background-color: yellowgreen;
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>pseudoclasse</h1>
+    <div id="d01">
+        <p>01</p>
+        <p>texto oculto</p>
+    </div>
+    <div id="d02">02</div>
+    <div id="d03">03</div>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+h1{
+    font: normal 3em arial, sans-serif;
+}
+p{
+    font: normal 1em arial, verdana, sans-serif;
+    text-align: justify;
+    text-indent: 3em;
+}
+.bb{
+    font: normal 1.5em 'Lucida Sans', sans-serif;
+    background-color: aqua;
+    width: 150px;
+    height: 75px;
+}
+.fort{
+    color: red;
+    text-decoration: none;
+    font-variant: small-caps;
+}

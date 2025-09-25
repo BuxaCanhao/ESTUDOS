@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+body{
+    font: normal 1em sans-serif;
+}
+h1{
+    font: normal bolder 2.5em times, serif;
+    text-decoration: underline;
+    text-transform: capitalize;
+    height: 20px;
+}
+p{
+    text-transform: capitalize;
+    font-size: 1.25em;
+}
+a{
+    font-size: 1.2em;
+    text-transform: capitalize;
+    color: teal;
+    text-decoration: none;
+}
+/*pseudo classes*/
+a:hover{
+    color: purple;
+    text-decoration: underline;
+    font-size: 1.5em;
+    background-color: sienna;
+    
+}
+a:active{
+    color: green;
+}
+/*pseudo elementos*/
+a::after {
+  content: ' link';
+  color: rgba(110, 134, 126, 0.363);
+}
+a::before{
+    content: 'link ';
+    color: rgba(110, 134, 126, 0.363);
+}
+/*
+#   = id
+.   = class
+:   = pseudoclass
+::  = pseudoelement
+>   = filho/children
+*/
