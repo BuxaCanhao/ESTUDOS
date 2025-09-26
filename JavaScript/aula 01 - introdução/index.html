@@ -9,12 +9,15 @@
 <body>
     <h1>título</h1>
     <div id="txt1">
-        <p><strong class="fort">Lorem</strong> ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequatur soluta, quae unde dolores nisi voluptate magni porro! Accusamus molestiae quae animi obcaecati alias itaque neque quos maiores molestias cumque! <strong class="fort">Lorem</strong> ipsum dolor sit amet consectetur, adipisicing elit. Hic quo quia asperiores qui officia, vero velit, libero praesentium et illum nobis. Esse quo sint iure velit, nam provident cumque consectetur.</p>
+        <p>
+            <strong class="fort">Lorem</strong> ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequatur soluta, quae unde dolores nisi voluptate magni porro! Accusamus molestiae quae animi obcaecati alias itaque neque quos maiores molestias cumque! <strong class="fort">Lorem</strong> ipsum dolor sit amet consectetur, adipisicing elit. Hic quo quia asperiores qui officia, vero velit, libero praesentium et illum nobis. Esse quo sint iure velit, nam provident cumque consectetur.
+        </p>
         <button class="bb">Clique em mim</button>
     </div>
     <script>
-        /*usar preferencialmente p querySelector*/
+        /*usar preferencialmente o querySelector*/
         var bt = document.querySelector('.bb')
+
         /*gera uma lista com o elemento selecionado*/
         var dv = document.querySelectorAll('.fort')
 
@@ -27,13 +30,20 @@
         }
         function sair(){
             bt.innerHTML = 'saiu'
+            dv[0].innerHTML = 'Test1'
+            dv[1].innerHTML = 'Test0'
+
+            /* a função "for" continua rodando até o fim da lista do querySelectorAll*/
+            for (let i = 0; i < dv.length; i++) {
+                dv[i].style.color = 'red';
+            }
         }
         function apertar(){
             bt.innerHTML = 'apertou'
-            dv[1].innerHTML = 'Test1'
-            dv[0].innerHTML = 'Test0'
-            /* a função "for" continua rodando até o fim da lista do
-            querySelectorAll*/
+            dv[0].innerHTML = 'desfeito'
+            dv[1].innerHTML = 'desfeito'
+
+            /* a função "for" continua rodando até o fim da lista do querySelectorAll*/
             for (let i = 0; i < dv.length; i++) {
                 dv[i].style.color = 'blue';
             }
