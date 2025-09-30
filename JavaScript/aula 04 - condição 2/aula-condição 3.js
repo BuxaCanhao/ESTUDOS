@@ -1,7 +1,7 @@
 var agora = new Date()
 var diaSem = agora.getDay()
 
-diaSem = 0
+diaSem = 6
 
 console.log(diaSem)
 
