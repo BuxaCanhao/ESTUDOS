@@ -14,6 +14,14 @@ function verificar(){
     if (fano.value.length ==0 || Number(fano.value)>ano || Number(fano.value)<1870){
         window.alert('Verifique os dados e tente novamente')
     }else{
-        
+        var idade = ano - Number(fano.value)
+        var fsex = document.querySelectorAll('input[name="radsex"]')
+        var genero = ''
+        if(fsex[0].checked){
+            genero = 'um homem'
+        }else if(fsex[1].checked){
+            genero = 'uma mulher'
+        }
+        res.innerHTML = `Então você é <strong>${genero}</strong> com <strong>${idade}</strong> anos.`
     }
 }
