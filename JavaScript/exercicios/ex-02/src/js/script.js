@@ -1,5 +1,6 @@
 function resetar(){
     var  fano = document.getElementById('txtano')
+    var res = document.querySelector('#res')
     if(fano.value != 2000){
         fano.value = '2000'
     }
