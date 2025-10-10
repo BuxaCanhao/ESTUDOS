@@ -10,7 +10,18 @@ header{
     text-align: center;
 }
 
-section{
+#imgft{
+    background-color: lightblue;
+    margin: auto;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    /*teste da esfera*/
+    position: absolute;
+    top: 2dvh;
+}
+
+main{
     background-color: whitesmoke;
     border-radius: 10px;
     padding: 15px;
