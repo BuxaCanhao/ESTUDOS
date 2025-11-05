@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style/style.css">
+    <script src="src/js/script.js"></script>
+    <title>excercicio 03</title>
+</head>
+
+<body>
+    <header>
+        <h1>Título</h1>
+    </header>
+    <main>
+        <section id="entradasec">
+            <form action="cal()">
+                <label for="entrada" nome="entrada">Entrada:</label>
+                <input type="number" id="entrada" placeholder="Insira um valor!" value="1" min="-99" max="99">
+                <button id="calcbt" type="button" value="Calcular" onclick="calc()">Calcular</button>
+            </form>
+        </section>
+        <section id="blcresp">
+            <div id="respPai">
+            </div>
+            <P id="blcinci">Vamos Calcular?</P>
+        </section>
+    </main>
+    <script>
+        // Obtém a referência ao seu campo de entrada
+        const entradaInput = document.querySelector('#entrada');
+
+        // Adiciona um ouvinte de evento para quando uma tecla for pressionada
+        entradaInput.addEventListener('keydown', function(event){
+
+            // Verifica se a tecla pressionada é a tecla 'Enter'
+            // 'event.key === "Enter"' é a forma moderna e recomendada
+            if (event.key === 'Enter'){
+
+                // Opcional: Evita que a tecla Enter cause qualquer ação padrão (como enviar um formulário)
+                event.preventDefault(); 
+                
+                // Chama a sua função de cálculo
+                calc();
+            }
+        });
+    </script>
+</body>
+
+</html>

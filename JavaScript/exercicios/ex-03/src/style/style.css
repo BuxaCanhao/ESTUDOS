@@ -1,0 +1,172 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #000d30;
+}
+
+body{
+    height: 100dvh;
+    /*alinhamento com flex*/
+    display: flex; /* define o tipo de display*/
+    align-items: center; /*como os itens serão alinhados*/
+    flex-direction: column; /*direção dos itens*/
+
+    /*cor de fundo*/
+    background-color: #000d30;
+    
+    /*fonte config*/
+    color: antiquewhite;
+    justify-content: center;
+}
+
+/******BLOCO DO TÍTULO******/
+header{
+    width: clamp(400px, 425px, 500px); /*clamp(minimo, preferencial, maximo)*/
+    background-color: antiquewhite;
+    padding: 4px;
+    border-radius: 10px;
+}
+
+header h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 4rem;
+    text-align: center;
+}
+
+/******BLOCO PRINCIPAL******/
+main{
+    /*espaçamentos*/
+    margin-top: 12px;
+    padding: 10px;
+
+    /*design da caixa*/
+    width: 450px;
+    border-radius: 10px;
+    background-color: antiquewhite;
+}
+
+/******BLOCO DA ENTRADA VALOR******/
+section{
+    /*espaçamento*/
+    padding: 10px;
+}
+
+label{
+    /*alinhamento*/
+    text-align: right;
+    vertical-align: middle;
+
+    /*txt config*/
+    font-size: 1.75rem;
+}
+
+input{
+    /*alinhamento*/
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 12px;
+
+    /*desing*/
+    width: 250px;
+    height: 32px;
+    border-radius: 4px;
+    border: 0;
+    background-color: #000d30;
+
+    /*txt config*/
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: antiquewhite;
+}
+
+input::placeholder{
+    /*alinhamento*/
+    position: absolute;
+    right: 50%;
+    transform: translate(50%, 50%);
+
+    /*txt config*/
+    font-size: 1rem;
+    color: #0b2b5c;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+  margin: 0;
+}
+
+/******BLOCO DAS RESPOSTAS******/
+#blcresp{
+    /*espaçamento*/
+    padding: 0px;
+}
+
+#respPai{
+    /*alinhamento*/
+    display: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-evenly;
+    gap: 10px;
+
+    /*espaçamento*/
+    padding: 0px;
+
+    /*design*/
+    max-height: 402px;
+}
+
+.respFilho{
+    /*alinhamento*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    /*espaçamento*/
+    margin: 4px;
+    padding: 4px;
+
+    /*desing*/
+    width: 200px;
+    height: 50px;
+    background-color: blue;
+    border-radius: 6px;
+    
+}
+
+.respFilho>p{
+    /*design*/
+    color: antiquewhite;
+    font-size: 1.5rem;
+}
+
+/******BLOCO DAS PERGUNTA INICIAL******/
+#blcinci{
+    text-align: center;
+}
+
+/******BLOCO DAS ERRO******/
+.blcError{
+    /*desing*/
+    width: 400px;
+    background-color: lemonchiffon;
+    border-radius: 6px;
+    border: red 2px solid;
+    box-shadow: red -1px -1px 4px 2px;
+
+    /*espaçamento*/
+    margin: 4px;
+    padding: 10px;
+
+    /*txt config*/
+    text-align: center;
+    font-size: 1.5rem;
+    color: red;
+}
