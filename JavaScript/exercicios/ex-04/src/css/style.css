@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Momo+Trust+Display&family=Momo+Trust+Sans:wght@200..800&display=swap');
+
+:root{
+    --fonte-display: 'Momo Trust Display', arial, sans-serif;
+    --font-txt: 'Momo Trust Sans', arial, sans-serif;
+    --cor-escura-1: #021b1a;
+    --cor-escura-2:#032221;
+    --cor-base: #03624c;
+    --cor-clara-1: #00df81;
+    --cor-clara-2: #2cc295;
+    --cor-clara-3: #e3f8f5;
+}
+
+*{
+    /*----[ESPAÇAMENTO]----*/
+    padding: 0;
+    margin: 0;
+
+    /*----[TXT CONFIG]----*/
+    font-family: var(--font-txt);
+    color: var(--cor-base);
+    font-weight: normal;
+    font-style: normal;
+}

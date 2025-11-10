@@ -3,9 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
     <title>Contador</title>
 </head>
 <body>
-    
+    <main>
+        <!-- botão de inicio -->
+        <button type="button" id="btinicio">Vamos contar!</button>
+        <!-- título -->
+        <h1>Contador</h1>
+        <!-- sessção com as entradas -->
+        <section>
+            <label for="valinicio">A partir de:</label>
+            <input type="number" id="valinicio" value="1" max="10" min="1">
+            <label for="valpulo">A cada:</label>
+            <input type="number" id="valpulo" value="1" max="10" min="1">
+            <button type="button" id="btcalcular">Conte!</button>
+        </section>
+        <div id="result"></div>
+    </main>
 </body>
 </html>
