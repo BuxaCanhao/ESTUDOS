@@ -5,8 +5,8 @@
 :root{
     --fonte-display: 'Momo Trust Display', arial, sans-serif;
     --font-txt: 'Momo Trust Sans', arial, sans-serif;
-    --cor-escura-1: #021b1a;
-    --cor-escura-2:#032221;
+    --cor-escura-1: #011d12;
+    --cor-escura-2:#082c2c;
     --cor-base: #03624c;
     --cor-clara-1: #00df81;
     --cor-clara-2: #2cc295;
@@ -25,4 +25,14 @@ body{
     color: var(--cor-base);
     font-weight: normal;
     font-style: normal;
+    
+    /*----[DESIGN]----*/
+    background-color: var(--cor-escura-2);
+}
+
+main{
+    margin: auto;
+    width: clamp(300px, 450px, 670px);
+    background-color: var(--cor-clara-3);
+    text-align: center;
 }
