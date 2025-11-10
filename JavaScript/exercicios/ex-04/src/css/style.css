@@ -14,10 +14,12 @@
 }
 
 *{
-    /*----[ESPAÇAMENTO]----*/
+    /*----[RESET DE ESPAÇAMENTO]----*/
     padding: 0;
     margin: 0;
+}
 
+body{
     /*----[TXT CONFIG]----*/
     font-family: var(--font-txt);
     color: var(--cor-base);
