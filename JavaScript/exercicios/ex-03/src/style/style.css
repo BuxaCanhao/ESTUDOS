@@ -147,6 +147,14 @@ input::-webkit-inner-spin-button{
     font-size: 1.5rem;
 }
 
+.respFilho:hover{
+    background-color: yellow;
+}
+
+.respFilho:hover >p{
+    color: blue;
+}
+
 /******BLOCO DAS PERGUNTA INICIAL******/
 #blcinci{
     text-align: center;
@@ -168,5 +176,9 @@ input::-webkit-inner-spin-button{
     /*txt config*/
     text-align: center;
     font-size: 1.5rem;
+    color: red;
+}
+
+.blcError h2{
     color: red;
 }

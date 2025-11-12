@@ -15,8 +15,8 @@ function calc(){
 
    
    //verificação e validação:
-    if(isNaN(valor)  || valor<-99 || valor>99 || valor == ""){
-        console.error = `Erro: O valor ${valor} está fora do intervalo permitido de (-99 a 99)`
+    if(isNaN(valor)  || valor<-99 || valor>99 || valor == "" || valor%1){
+        console.error = `Erro! Esse valor ${valor} não é inteiro e não está dentro do intervalo (-99 a 99)`
         parInicial.style.display = 'line-block'
         
         //alerta de erro
@@ -26,7 +26,7 @@ function calc(){
         erroBlk.classList.add('blcError')
 
         //Por texto dentro de erroMsg
-        erroBlk.textContent = `Erro: O valor ${valor} está fora do intervalo permitido de (-99 a 99)`
+        erroBlk.innerHTML = `<h2>Erro!</h2>Esse valor ${valor} não é inteiro e não está dentro do intervalo (-99 a 99)`
 
         //Testa se o elemento pai existe e aninhando os elementos nele:
         if(elPai){
