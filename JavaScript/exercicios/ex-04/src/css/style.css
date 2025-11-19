@@ -13,13 +13,17 @@
     --cor-clara-3: #e3f8f5;
 }
 
-*{
+*{/*esse espaço é para resetar o espaçamento*/
     /*----[RESET DE ESPAÇAMENTO]----*/
     padding: 0;
     margin: 0;
 }
 
 body{
+    /*----[ALINHAMENTO]----*/
+    display: flex;
+    justify-content: center;
+
     /*----[TXT CONFIG]----*/
     font-family: var(--font-txt);
     color: var(--cor-base);
@@ -28,11 +32,20 @@ body{
     
     /*----[DESIGN]----*/
     background-color: var(--cor-escura-2);
+    min-height: 100dvh;
 }
 
 main{
+    /*----[ESPAÇAMENTO]----*/
     margin: auto;
-    width: clamp(300px, 450px, 670px);
-    background-color: var(--cor-clara-3);
+    display: grid;
+
+    /*----[TXT CONFIG]----*/
     text-align: center;
+
+    /*----[DESIGN]----*/
+    width: clamp(300px, 450px, 670px);
+    min-height: 120px;
+    border-radius: 10PX;
+    background-color: var(--cor-clara-3);
 }
