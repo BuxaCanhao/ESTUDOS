@@ -1,5 +1,6 @@
 function btinicio(){
     const valInicio = document.querySelector('#valinicio')
+    const valorEnt = +valInicio.value //O mais na frente passa para numero
     const result = document.querySelector('#bxmsg')
     const valInput = document.querySelector('.inputval')
     
@@ -7,7 +8,7 @@ function btinicio(){
     result.innerHTML =''
     
     //verificação de validade de entrada
-    if(valInicio.value>10 || valInicio.value<1){
+    if(valorEnt>10 || valorEnt<1){
         //gera a mensagem de alerta
         let divMsgAler = document.createElement('div')
         divMsgAler.id = 'msgAlert'
@@ -17,13 +18,13 @@ function btinicio(){
         valInicio.style.color = 'red'
         valInicio.style.fontWeight = 'bold'
         
-        if(valInicio.value == ''){
+        if(valorEnt == ''){
                 divMsgAler.innerHTML = `Só pode inserir número de 1 a 10`
-            }else if(valInicio.value>10){
-                divMsgAler.innerHTML = `Esse valor de ${valInicio.value}, está acima de 10<br>Só pode inserir número de 1 a 10`
-            }else if(valInicio.value<1){
-                divMsgAler.innerHTML = `Esse valor de ${valInicio.value}, está abaixo de 1<br>Só pode inserir número de 1 a 10`
+            }else if(valorEnt>10){
+                divMsgAler.innerHTML = `Esse valor de ${valorEnt}, está acima de 10<br>Só pode inserir número de 1 a 10`
+            }else if(valorEnt<1){
+                divMsgAler.innerHTML = `Esse valor de ${valorEnt}, está abaixo de 1<br>Só pode inserir número de 1 a 10`
             }
-            
+
         }
 }
