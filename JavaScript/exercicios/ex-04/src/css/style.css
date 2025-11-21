@@ -51,20 +51,19 @@ main{
 }
 
 input{
-    /*----[ESPAÇAMENTO]----*/
+    /*----[DESING]----*/
     width: 20px;
+
     /*----[TXT CONFIG]----*/
     text-align: center;
-    color: ;
 }
 
-/*--[Chrome, Safari, Edge, Opera]--*/
+/*--[INPUT CONFIG(chrome, edge)]--*/
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button{
     -webkit-appearance: none;
-  margin: 0;
+    margin: 0;
 }
-
 
 #result{
     /*----[ESPAÇAMENTO]----*/
@@ -82,5 +81,4 @@ input::-webkit-inner-spin-button{
     height: auto;
     border-radius: 5px;
     background-color: var(--cor-clara-2);
-
 }
