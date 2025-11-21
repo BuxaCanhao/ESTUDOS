@@ -67,8 +67,8 @@ input::-webkit-inner-spin-button{
 
 #result{
     /*----[ESPAÇAMENTO]----*/
-    display: none;
     margin: auto;
+    padding: 6px;
 
     /*----[TXT CONFIG]----*/
     text-align: center;
@@ -81,4 +81,22 @@ input::-webkit-inner-spin-button{
     height: auto;
     border-radius: 5px;
     background-color: var(--cor-clara-2);
+}
+
+#msgAlert{
+    /*----[ESPAÇAMENTO]----*/
+    margin: auto;
+    padding: 6px;
+
+    /*----[TXT CONFIG]----*/
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: gold;
+
+    /*----[DESIGN]----*/
+    width: 75%;
+    height: auto;
+    border-radius: 5px;
+    background-color: crimson;
 }
