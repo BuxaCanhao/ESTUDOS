@@ -49,3 +49,15 @@ main{
     border-radius: 10PX;
     background-color: var(--cor-clara-3);
 }
+
+#result{
+    display: none;
+    width: 75%;
+    height: auto;
+    margin: auto;
+    border-radius: 5px;
+    text-align: center;
+    color: var(--cor-clara-3);
+    background-color: var(--cor-escura-1);
+
+}
