@@ -4,7 +4,7 @@ import Tasks from './assets/components/Tasks'
 function App() {
   return (
     <>
-      <h1>Gerenciador de tarefas</h1>
+      <h1 className='text-'>Gerenciador de tarefas</h1>
       <Tasks />
     </>
   )
