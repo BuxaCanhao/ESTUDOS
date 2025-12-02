@@ -6,6 +6,7 @@ function App() {
   return (
     <>
     <h1>Olá React+Vite!</h1>
+    <h2>é isso</h2>
     </>
   )
 }
