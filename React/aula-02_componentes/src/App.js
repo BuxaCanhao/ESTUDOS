@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import Component from './components/Component';
 import './App.css';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         >
           Vamos nessa!
         </a>
+        <Component />
       </header>
     </div>
   );
