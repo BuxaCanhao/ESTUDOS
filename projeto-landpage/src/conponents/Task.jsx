@@ -1,9 +1,12 @@
+{
+  /*importações*/
+}
+import "../App.css"
+
 function Task() {
-  return (
-    <div className="m-">
-      <h1>Task </h1>
-    </div>
-  );
+  return <div className="task m-auto bg-sky-200 h-dvh">
+    <p>texto</p>
+  </div>;
 }
 
 export default Task;

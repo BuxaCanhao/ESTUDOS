@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
 body{
-  background-color: blue;
+  background-color: azure;
+}
+
+.task{
+  text-align: center;
 }
