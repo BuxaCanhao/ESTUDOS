@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela grande</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        table {
+            background-color: tomato;
+            border-collapse: collapse;
+            width: 600px;
+        }
+
+        thead {
+            background-color: brown;
+        }
+
+        td,
+        th {
+            border: 2px solid rgb(116, 41, 28);
+            padding: 10px;
+        }
+
+        th {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 1.5em;
+        }
+
+        .numb {
+            text-align: center;
+        }
+
+        tbody>tr {
+            height: 75px;
+        }
+
+        /*efeito zebrado*/
+        tbody>tr:nth-child(even) {
+            /*marcador de linha par*/
+            background-color: aquamarine;
+        }
+
+        tbody>tr:nth-child(odd) {
+            /*marcador de linha impar*/
+            background-color: rgb(112, 243, 215);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tabela grande</h1>
+    <table>
+        <tbody>
+            <tr>
+                <td class="nome">José</td>
+                <td class="dt">10/10/2001</td>
+                <td class="numb">(21)968664222</td>
+            </tr>
+            <tr>
+                <td class="nome">José</td>
+                <td class="dt">10/10/2001</td>
+                <td class="numb">(21)968664222</td>
+            </tr>
+            <tr>
+                <td class="nome">José</td>
+                <td class="dt">10/10/2001</td>
+                <td class="numb">(21)968664222</td>
+            </tr>
+            <tr>
+                <td class="nome">José</td>
+                <td class="dt">10/10/2001</td>
+                <td class="numb">(21)968664222</td>
+            </tr>
+            <tr>
+                <td class="nome">José</td>
+                <td class="dt">10/10/2001</td>
+                <td class="numb">(21)968664222</td>
+            </tr>
+            <tr>
+                <td class="nome">José</td>
+                <td class="dt">10/10/2001</td>
+                <td class="numb">(21)968664222</td>
+            </tr>
+            <tr>
+                <td class="nome">José</td>
+                <td class="dt">10/10/2001</td>
+                <td class="numb">(21)968664222</td>
+            </tr>
+            <tr>
+                <td class="nome">José</td>
+                <td class="dt">10/10/2001</td>
+                <td class="numb">(21)968664222</td>
+            </tr>
+            <tr>
+                <td class="nome">José</td>
+                <td class="dt">10/10/2001</td>
+                <td class="numb">(21)968664222</td>
+            </tr>
+            <tr>
+                <td class="nome">José</td>
+                <td class="dt">10/10/2001</td>
+                <td class="numb">(21)968664222</td>
+            </tr>
+            <tr>
+                <td class="nome">José</td>
+                <td class="dt">10/10/2001</td>
+                <td class="numb">(21)968664222</td>
+            </tr>
+            <tr>
+                <td class="nome">José</td>
+                <td class="dt">10/10/2001</td>
+                <td class="numb">(21)968664222</td>
+            </tr>
+            <tr>
+                <td class="nome">José</td>
+                <td class="dt">10/10/2001</td>
+                <td class="numb">(21)968664222</td>
+            </tr>
+            <tr>
+                <td class="nome">José</td>
+                <td class="dt">10/10/2001</td>
+                <td class="numb">(21)968664222</td>
+            </tr>
+            <tr>
+                <td class="nome">José</td>
+                <td class="dt">10/10/2001</td>
+                <td class="numb">(21)968664222</td>
+            </tr>
+            <tr>
+                <td class="nome">José</td>
+                <td class="dt">10/10/2001</td>
+                <td class="numb">(21)968664222</td>
+            </tr>
+            <tr>
+                <td class="nome">José</td>
+                <td class="dt">10/10/2001</td>
+                <td class="numb">(21)968664222</td>
+            </tr>
+            <tr>
+                <td class="nome">José</td>
+                <td class="dt">10/10/2001</td>
+                <td class="numb">(21)968664222</td>
+            </tr>
+            <tr>
+                <td class="nome">José</td>
+                <td class="dt">10/10/2001</td>
+                <td class="numb">(21)968664222</td>
+            </tr>
+            <tr>
+                <td class="nome">José</td>
+                <td class="dt">10/10/2001</td>
+                <td class="numb">(21)968664222</td>
+            </tr>
+            <tr>
+                <td class="nome">José</td>
+                <td class="dt">10/10/2001</td>
+                <td class="numb">(21)968664222</td>
+            </tr>
+            <tr>
+                <td class="nome">José</td>
+                <td class="dt">10/10/2001</td>
+                <td class="numb">(21)968664222</td>
+            </tr>
+            <tr>
+                <td class="nome">José</td>
+                <td class="dt">10/10/2001</td>
+                <td class="numb">(21)968664222</td>
+            </tr>
+            <tr>
+                <td class="nome">José</td>
+                <td class="dt">10/10/2001</td>
+                <td class="numb">(21)968664222</td>
+            </tr>
+        </tbody>
+        <!-- mesmo o THEAD estando em baixo do TBODY o navegador entende a ordem semantica deles-->
+        <thead>
+            <tr>
+                <th scope="col">Nomes</th>
+                <th scope="col">Nascimentos</th>
+                <th scope="col">Telefones</th>
+            </tr>
+        </thead>
+        <caption>Uma leve descrição da tabela</caption>
+    </table>
+    <a href="tabela-1.html">tabela pequena</a>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur a molestiae expedita pariatur, et amet
+        necessitatibus quidem impedit dolores. Odio nulla magni odit eveniet nisi ducimus delectus eum. Dolorum,
+        incidunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente enim commodi cupiditate perferendis
+        incidunt, officia illo dolores dicta impedit suscipit earum ea? Facilis itaque provident delectus accusamus
+        aliquid. Ipsa, repellendus?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus vero
+        dignissimos illum, tempora commodi non totam aliquid quidem nisi? Dignissimos impedit, in vero eligendi mollitia
+        dolore asperiores numquam ex consectetur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
+        quod, ab sed sunt harum debitis nostrum, voluptate similique quidem asperiores dicta voluptas porro itaque
+        consectetur iste nulla vero? Aliquid, nemo.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur a molestiae expedita pariatur, et amet
+        necessitatibus quidem impedit dolores. Odio nulla magni odit eveniet nisi ducimus delectus eum. Dolorum,
+        incidunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente enim commodi cupiditate perferendis
+        incidunt, officia illo dolores dicta impedit suscipit earum ea? Facilis itaque provident delectus accusamus
+        aliquid. Ipsa, repellendus?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus vero
+        dignissimos illum, tempora commodi non totam aliquid quidem nisi? Dignissimos impedit, in vero eligendi mollitia
+        dolore asperiores numquam ex consectetur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
+        quod, ab sed sunt harum debitis nostrum, voluptate similique quidem asperiores dicta voluptas porro itaque
+        consectetur iste nulla vero? Aliquid, nemo.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur a molestiae expedita pariatur, et amet
+        necessitatibus quidem impedit dolores. Odio nulla magni odit eveniet nisi ducimus delectus eum. Dolorum,
+        incidunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente enim commodi cupiditate perferendis
+        incidunt, officia illo dolores dicta impedit suscipit earum ea? Facilis itaque provident delectus accusamus
+        aliquid. Ipsa, repellendus?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus vero
+        dignissimos illum, tempora commodi non totam aliquid quidem nisi? Dignissimos impedit, in vero eligendi mollitia
+        dolore asperiores numquam ex consectetur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
+        quod, ab sed sunt harum debitis nostrum, voluptate similique quidem asperiores dicta voluptas porro itaque
+        consectetur iste nulla vero? Aliquid, nemo.
+    </p>
+</body>
+
+</html>

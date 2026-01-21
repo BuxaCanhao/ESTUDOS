@@ -1,11 +1,8 @@
-{
-  /*componentes*/
-}
+{/*componentes*/}
 import AddTask from "./conponents/AddTask";
 import Task from "./conponents/Task";
-{
-  /*estilo*/
-}
+
+{/*estilo*/}
 import "./App.css";
 
 function App() {
