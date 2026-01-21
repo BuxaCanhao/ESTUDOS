@@ -1,0 +1,62 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+table {
+  background-color: tomato;
+  border-collapse: collapse;
+  width: 600px;
+  position: relative;
+  border: 2px solid rgb(116, 41, 28);
+}
+
+caption {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+thead {
+  background-color: brown;
+}
+
+thead > tr > th {
+  position: sticky; /*esperimental até a presente data(21/01/26)*/
+  top: -1px; /*se posto 0px, fica com uma certa distancia*/
+  background-color: brown;
+}
+
+td,
+th {
+  border: 2px solid rgb(116, 41, 28);
+  padding: 10px;
+}
+
+th {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.5em;
+}
+tbody > tr,
+thead > th {
+  height: 75px;
+}
+
+/*efeito zebrado*/
+tbody > tr:nth-child(even) {
+  /*marcador de linha par*/
+  background-color: aquamarine;
+}
+
+tbody > tr:nth-child(odd) {
+  /*marcador de linha impar*/
+  background-color: rgb(112, 243, 215);
+}
+
+.numb {
+  text-align: center;
+}
