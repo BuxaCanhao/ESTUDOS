@@ -9,7 +9,9 @@ function App() {
   return (
     <div>
       <AddTask />
-      <Task />
+      <div style={{width: 150, margin: 'auto'}}>
+        <Task />
+      </div>
       <AddTask />
     </div>
   );

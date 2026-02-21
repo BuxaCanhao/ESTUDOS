@@ -1,7 +1,7 @@
 function AddTask() {
   return (
-    <div className="bg-amber-200 w-[600px]">
-      <h1>Add Task</h1>
+    <div className="bg-amber-200  m-auto">
+      <h1>parte do task</h1>
     </div>
   );
 }
