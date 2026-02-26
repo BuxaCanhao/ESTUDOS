@@ -10,7 +10,6 @@ function App() {
     <div>
       <div style={{width: 250, margin: 'auto'}}>
         <AddTask />
-        <AddTask />
       </div>
       <div style={{width: 150, margin: 'auto'}}>
         <Task />
