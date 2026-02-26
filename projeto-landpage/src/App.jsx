@@ -8,7 +8,10 @@ import "./App.css";
 function App() {
   return (
     <div>
-      <AddTask />
+      <div style={{width: 250, margin: 'auto'}}>
+        <AddTask />
+        <AddTask />
+      </div>
       <div style={{width: 150, margin: 'auto'}}>
         <Task />
       </div>
