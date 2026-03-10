@@ -1,0 +1,13 @@
+/* CSS */
+body {
+  height: 95dvh;
+  gap: 10px;
+
+  display: grid;
+  align-content: space-around;
+}
+
+.container {
+  width: 300px;
+  height: 150px;
+}
